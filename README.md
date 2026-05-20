@@ -35,3 +35,11 @@ cd patient-registration-platform-nextjs
 
 npm install
 npm run dev
+```
+
+## Proof
+
+Used by the Mayor of Kamphaeng Phet City Municipality for home visits to bedridden and chronic disease patients.
+
+Reference:
+https://www.kppmu.go.th/news-detail?hd=1&id=124000
