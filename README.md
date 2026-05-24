@@ -1,55 +1,91 @@
 <h1 align="center">Patient Intake System</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Framework-Next.js-black" />
-  <img src="https://img.shields.io/badge/Backend-Google_Apps_Script-4285F4" />
-  <img src="https://img.shields.io/badge/Data_Source-Google_Sheets-34A853" />
-  <img src="https://img.shields.io/badge/Styling-Tailwind_CSS-38BDF8" />
+  <strong>Modern Digital Intake Platform for Community Healthcare</strong><br>
+  <sub>Streamlining patient registration, lookup, and communication for real-world clinical workflows</sub>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Production_Ready-brightgreen" />
+  <img src="https://img.shields.io/badge/Use_Case-Healthcare_System-blue" />
+  <img src="https://img.shields.io/badge/Stack-Next.js_+_LINE_+_GAS-black" />
+</p>
 
-## About
+---
 
-Patient intake system built to support community healthcare workflows, including registration, patient lookup, and digital intake processes for field and clinic use.
+## 🧠 The Problem
 
-Designed based on direct requirements from nursing staff to reduce manual workload and improve data consistency.
+Community healthcare teams still rely heavily on manual patient intake processes:
 
-<br>
+- Paper-based registration slows down operations  
+- Patient lookup is time-consuming and error-prone  
+- Communication between staff and patients is fragmented  
+- Data inconsistency across systems (paper / spreadsheets / messaging apps)
 
-## Features
+---
 
-- Patient registration (new cases)  
-- Existing patient lookup  
-- Real-time staff notifications  
-- Digital intake workflow  
+## 💡 The Solution
 
-<br>
+**Patient Intake System** digitizes and automates the entire intake workflow:
 
-## Tech Stack
+- Instant patient registration (new & returning cases)
+- Fast patient lookup via structured database
+- LINE-based communication workflow
+- Real-time synchronization with Google Sheets backend
 
-- Next.js  
-- Tailwind CSS  
-- Google Apps Script  
-- Google Sheets  
+Designed specifically for **field nurses and municipal healthcare teams**
 
-<br>
+---
 
-## Impact
+## 📸 Product Preview
 
-- Reduced manual workload by ~80%  
-- Used in real community healthcare operations  
-- Supported home visit workflows for municipal healthcare teams  
+<p align="center">
+  <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779584919/%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_1_v8yqdd.png" width="900" />
+</p>
 
-<br>
+<p align="center">
+  <sub>Real-time alerts notifying staff when a new patient registers</sub>
+</p>
 
-## Reference  
+---
 
-Municipal healthcare use case: https://www.kppmu.go.th/news-detail?hd=1&id=124000
+## ⚙️ Core Features
 
-<br>
+- 🧑‍⚕️ Patient Registration System  
+- 🔍 Instant Patient Lookup  
+- 💬 LINE Messaging Integration  
+- 📊 Real-time Google Sheets Sync  
+- ⚡ Lightweight & Fast UI (Next.js)
 
-## Installation
+---
+
+## 📈 Impact
+
+- ⬇ Reduced manual data entry workload by **up to 80%**
+- ⬆ Improved patient intake speed in field operations
+- ⬆ Increased data accuracy across healthcare workflows
+- 🏥 Successfully aligned with real municipal healthcare usage
+
+---
+
+## 🧱 Tech Stack
+
+- Frontend: Next.js
+- Messaging: LINE Messaging API
+- Backend Logic: Google Apps Script
+- Database: Google Sheets
+- UI: Tailwind CSS
+
+---
+
+## 🏛 Real-World Use Case
+
+Municipal healthcare deployment reference:  
+https://www.kppmu.go.th/news-detail?hd=1&id=124000
+
+---
+
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
@@ -59,3 +95,11 @@ cd patient-registration-platform-nextjs
 npm install
 npm run dev
 ```
+
+Setup environment variables:
+
+Create a `.env.local` file in the root directory:
+
+```env
+CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
+CHANNEL_SECRET=your_line_channel_secret
