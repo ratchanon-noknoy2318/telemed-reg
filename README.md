@@ -102,7 +102,7 @@ Create a `.env.local` file in the root directory:
 
 ```env
 CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
-CHANNEL_SECRET=your_line_channel_secret
+userId=your_grups_id
 APPS_SCRIPT_WEB_APP_URL=GOOGLE_APPS_SCRIPT_URL
 ```
 
