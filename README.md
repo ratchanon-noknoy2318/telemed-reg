@@ -96,21 +96,66 @@ Supported actions:
 ```txt
 register_new
 register_existing
-find_patient
+```
+
+---
+
+## 📖 API Usage Examples
+
+### 1. Patient Registration (Google Apps Script)
+To register a new patient via the Google Apps Script backend Web App module.
+
+**Request Payload (`POST /exec?action=register_new`)**
+```json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "citizenId": "1100000000000",
+  "phoneNumber": "0812345678",
+  "symptoms": "Mild fever and cough for 2 days"
+}
+```
+
+**Response (`200 OK`)**
+```json
+{
+  "status": "success",
+  "message": "Patient registered successfully",
+  "data": {
+    "patientId": "HN-2026-0001",
+    "registrationTime": "2026-05-28T05:30:00.000Z"
+  }
+}
+```
+
+---
+
+### 2. Staff Notification (LINE Messaging API)
+Triggered automatically when a new patient registers to alert the field nurses.
+
+**Request Payload (`POST /v2/bot/message/push`)**
+```json
+{
+  "to": "your_line_admin_user_id",
+  "messages": [
+    {
+      "type": "text",
+      "text": "🚨 New Telemedicine Registration!\nName: John Doe\nSymptoms: Mild fever and cough for 2 days.\nPlease review the lookup queue."
+    }
+  ]
+}
 ```
 
 ---
 
 ## 🏗 System Flow
 
-```txt
-Next.js
-   ↓
-Google Apps Script
-   ↓
-Google Sheets
-   ↓
-LINE Messaging API
+```mermaid
+graph TD
+    NextJS[Next.js Frontend UI] -->|1. Submit Form| GAS[Google Apps Script Backend]
+    GAS -->|2. Sync Data| Sheets[(Google Sheets Database)]
+    GAS -->|3. Trigger Alert| LINE[LINE Messaging API]
+    LINE -->|4. Push Notification| Nurses[Field Nurses Team]
 ```
 
 ---
@@ -136,12 +181,3 @@ APPS_SCRIPT_WEB_APP_URL=your_google_apps_script_web_app_url
 
 ---
 
-## 👥 Contributors
-
-Healthcare and municipal workflow collaboration
-
----
-
-## License
-
-MIT License
