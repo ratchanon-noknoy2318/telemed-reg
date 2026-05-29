@@ -225,3 +225,14 @@ graph TD
    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+## 🏛️ Real-World Deployment
+
+This system was officially deployed and utilized by the **Kamphaeng Phet Municipal Government** to modernize public healthcare workflows:
+
+*   **Official Verification:** Deployed as the core framework for local public health initiatives, officially recognized by the Mayor and municipal executives ([View Government Report](https://www.kppmu.go.th/news-detail?hd=1&id=124000)).
+*   **Target Users:** Actively used by municipal field nurses, healthcare staff, and community health volunteers to bridge communication gaps.
+*   **Zero-Training Success:** Transitioned traditional administrative hurdles into a friction-free intake workflow, leveraging familiar channels like LINE without requiring formal software training for staff or patients.
+
