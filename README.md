@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Production_Ready-brightgreen" />
   <img src="https://img.shields.io/badge/Use_Case-Healthcare_System-blue" />
-  <img src="https://img.shields.io/badge/Stack-Next.js_+_Google_Apps_Script_+_LINE-black" />
+  <img src="https://img.shields.io/badge/Stack-Next.js_+_Google_Apps_Script_+_LINE_OA-black" />
 </p>
 
 <p align="center">
