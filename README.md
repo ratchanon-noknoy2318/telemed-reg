@@ -1,19 +1,14 @@
-# Telemedicine Registration System
+## Telemedicine Registration System
 
-A production-oriented healthcare registration system designed for hospital workflows, enabling patient registration, automated notifications via LINE Messaging API, and structured data storage through Google Sheets powered by Google Apps Script.
+Healthcare registration system for hospitals enabling 24/7 patient self-registration, LINE notifications via Messaging API, and data storage using Google Sheets + Apps Script.
 
 ## Tech Stack
-
-- Next.js
-- Tailwind CSS
-- Google Apps Script (GAS)
-- Google Sheets
-- LINE Messaging API
+Next.js, Tailwind CSS, GAS, Google Sheets, LINE Messaging API
 
 ## Features
-- Users can self-register 24/7
-- System sends LINE notifications to the responsible nurse
+- Self-registration 24/7
+- Automatic LINE notifications to nurses
 
-
-## Evidence of usage: Used by the Mayor of Kamphaeng Phet Municipality.
-[Click to view evidence](https://www.kppmu.go.th/news-detail?hd=1&id=124000)
+## Evidence of Usage
+Used by the Mayor of Kamphaeng Phet Municipality  
+https://www.kppmu.go.th/news-detail?hd=1&id=124000
