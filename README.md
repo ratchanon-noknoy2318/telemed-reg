@@ -1,30 +1,62 @@
-# Healthcare Registration App
-แอปพลิเคชันระบบลงทะเบียนบริการทางการแพทย์ ทำงานร่วมกับ Line Messaging API เพื่อแจ้งเตือน และบันทึกข้อมูลลง Google Sheets ผ่าน Google Apps Script
+# 🏥 Healthcare Registration System
 
->For hospital use only.
+A production-oriented healthcare registration system designed for hospital workflows, enabling patient registration, automated notifications via LINE Messaging API, and structured data storage through Google Sheets powered by Google Apps Script.
+
+> Designed for internal hospital operations and workflow automation.
 
 ---
 
-## Tech Stack
-- **Frontend/Backend:** Next.js
-- **Styling:** Tailwind CSS
-- **Database:** Google Sheets + Google Apps Script (GAS)
-- **Notification:** Line Messaging API
+## 🎯 Overview
 
-## How to Run
-```bash
-npm install
-npm run dev
-```
+This system streamlines patient registration and notification processes in healthcare environments by connecting:
 
-## Environment Variables
-สร้างไฟล์ `.env.local` ที่ Root folder แล้วกำหนดค่าดังนี้:
-```env
-NEXT_PUBLIC_GAS_URL=your_google_apps_script_web_app_url
-LINE_CHANNEL_ACCESS_TOKEN=your_line_token
-LINE_CHANNEL_SECRET=your_line_secret
-```
+- A modern web interface built with Next.js
+- Automated backend processing via Google Apps Script
+- Structured data storage using Google Sheets
+- Real-time notifications through LINE Messaging API
 
-## Additional Information
-- Evidence of Use: https://www.kppmu.go.th/news-detail?hd=1&id=124000
-- LINE Official Account: https://sites.google.com/view/hospital-line-gateway
+It replaces manual registration workflows with a lightweight, cloud-based automation pipeline.
+
+---
+
+## 🚀 Key Features
+
+- 📋 Patient registration form with real-time submission
+- 🔄 Automated data synchronization to Google Sheets
+- 💬 Instant notifications via LINE Messaging API
+- 🧠 Serverless backend logic using Google Apps Script
+- ⚡ Lightweight deployment with no dedicated backend server required
+- 🔐 Environment-based configuration for secure API handling
+
+---
+
+## 🧰 Tech Stack
+
+**Frontend**
+- Next.js
+- Tailwind CSS
+
+**Backend / Integration Layer**
+- Google Apps Script (GAS)
+
+**Data Layer**
+- Google Sheets
+
+**Messaging / Notification**
+- LINE Messaging API
+
+---
+
+## 🏗️ System Architecture
+
+flowchart TD
+    A[User] --> B[Next.js Frontend]
+
+    B --> C[API Layer - Google Apps Script]
+
+    C --> D[Validation & Processing]
+    D --> E[Google Sheets Storage]
+
+    D --> F[LINE Messaging API]
+
+    F --> G[Hospital Staff Notification]
