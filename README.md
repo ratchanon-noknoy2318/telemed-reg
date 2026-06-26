@@ -60,3 +60,8 @@ flowchart TD
     D --> F[LINE Messaging API]
 
     F --> G[Hospital Staff Notification]
+
+---
+
+## Evidence of usage
+[Click to view evidence](https://www.kppmu.go.th/news-detail?hd=1&id=124000)
