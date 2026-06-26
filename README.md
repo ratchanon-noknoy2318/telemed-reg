@@ -3,7 +3,12 @@
 Healthcare registration system for hospitals enabling 24/7 patient self-registration, LINE notifications via Messaging API, and data storage using Google Sheets + Apps Script.
 
 ## Tech Stack
-Next.js, Tailwind CSS, GAS, Google Sheets, LINE Messaging API
+- Next.js
+- Tailwind CSS
+- Google Apps Script
+- Google Sheet
+- LINE Messaging API
+
 
 ## Features
 - Self-registration 24/7
